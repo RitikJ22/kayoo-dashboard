@@ -1,21 +1,14 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Sidebar, Workflow } from "./components";
+import "./global.css";
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex min-h-svh w-full p-4">
+      <Sidebar />
+      <div className="flex flex-grow">
+        <Workflow />
       </div>
-      <h1>Kayoo</h1>
-      <p className="read-the-docs">An AI Powered Dashboard</p>
-    </>
+    </div>
   );
 }
 
