@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-interface TabProps {
+type TabProps = {
   tabs: { type: string; icon: React.ReactNode; text?: string }[];
-}
+};
 
 export const Tab: React.FC<TabProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState<string>(tabs[0]?.type);

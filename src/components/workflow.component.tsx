@@ -1,6 +1,7 @@
 import { FaCodeBranch } from "react-icons/fa";
 import { Tab } from "./tab.component";
 import { BsWindowSidebar } from "react-icons/bs";
+import { DnDFlow } from "./DragNDrop/dnd-flow";
 
 export const Workflow = () => {
   const tabs = [
@@ -12,8 +13,8 @@ export const Workflow = () => {
     },
   ];
   return (
-    <div className="min-h-svh">
-      <div className="h-full w-full flex justify-between">
+    <div className="px-4 w-full flex-grow">
+      <div className="flex justify-between mb-6">
         <div className="flex flex-col">
           <div className="flex items-center justify-normal gap-2">
             <h2 className="text-2xl font-bold">Project Name</h2>
@@ -29,6 +30,7 @@ export const Workflow = () => {
           <Tab tabs={tabs} />
         </div>
       </div>
+      <DnDFlow />
     </div>
   );
 };
