@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="flex min-h-svh w-full p-4">
       <Sidebar />
-      <main className="flex flex-col gap-12 w-[92vw]">
+      <main className="flex flex-col gap-12 w-full sm:w-[92vw]">
         <div className="flex mb-16">
           <Workflow />
         </div>
-        <div className="flex items-center justify-between w-full">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full">
           <CodeEditor />
           <BlockBuilder />
         </div>

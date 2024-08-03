@@ -1,8 +1,8 @@
 .dndflow {
-  flex-direction: column;
-  display: flex;
   flex-grow: 1;
   height: 100%;
+  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .dndflow .dndnode.input {
@@ -21,13 +21,6 @@
 
 .dndflow .selectall {
   margin-top: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .dndflow {
-    flex-direction: row;
-    flex-direction: row-reverse;
-  }
 }
 
 .react-flow__node-output,
