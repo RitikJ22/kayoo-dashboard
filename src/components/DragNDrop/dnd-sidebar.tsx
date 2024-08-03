@@ -41,19 +41,19 @@ export const DndSideBar: React.FC<DndSideBarProps> = ({
   };
 
   return (
-    <aside className="h-full rounded-xl bg-[#2c2c2c]/90 min-w-[250px] py-5 px-2 gap-3">
+    <aside className="h-full rounded-xl bg-[#2c2c2c]/90 md:min-w-[250px] py-5 px-2 gap-3">
       <div className="text-white text-lg font-bold flex items-center justify-between gap-3">
         <div className="flex items-center justify-start gap-1">
           <FiChevronLeft />
-          <span className="text-white">Code Transform</span>
+          <span className="text-white max-md:text-xs">Code Transform</span>
         </div>
-        <IoIosSearch size={25} />
+        <IoIosSearch className="md:w-6 md:h-6 w-4 h-4" />
       </div>
       <div className="w-full h-[1px] bg-[#bdbdbd] mt-3 mb-5" />
       <button className="mb-3 border-purple-500 py-2 px-1 border bg-purple-500/20 text-white rounded-md flex items-center justify-between w-full">
         <div className="flex items-center justify-center gap-1">
           <IoMdListBox size={20} />
-          <span className="text-md"> Header section</span>
+          <span className="text-xs md:text-base"> Header section</span>
         </div>
         <FiChevronDown size={20} />
       </button>
@@ -63,7 +63,7 @@ export const DndSideBar: React.FC<DndSideBarProps> = ({
             className="cursor-pointer p-3 mt-1 text-white justify-between items-center flex hover:bg-[#bdbdbd]/40 rounded-md"
             onClick={() => toggleDropdown(dropdown.id)}
           >
-            <div className="flex items-center justify-center gap-1">
+            <div className="flex items-center justify-center gap-1 text-xs md:text-base">
               <IoMdListBox size={20} />
               {dropdown.label}
             </div>
@@ -80,7 +80,7 @@ export const DndSideBar: React.FC<DndSideBarProps> = ({
               {nodeItems.map((item) => (
                 <div
                   key={item.id}
-                  className="h-5 p-2 py-5 flex justify-start items-center cursor-pointer hover:bg-[#bdbdbd]/40 rounded-md"
+                  className="h-5 p-2 py-5 flex justify-start text-xs md:text-md items-center cursor-pointer hover:bg-[#bdbdbd]/40 rounded-md"
                   onClick={() => onAddNode(item.id, item.label)}
                 >
                   {item.label}

@@ -23,13 +23,13 @@ export const BlockBuilder = () => {
 
   return (
     <div className="flex flex-col p-4 rounded-xl bg-[#2c2c2c]/90 shadow-md mx-4 md:w-fit h-full w-full md:min-w-[400px]">
-      <span className="text-lg font-bold mb-4 text-[#bdbdbd] uppercase">
+      <span className="text-sm md:text-lg font-bold mb-4 text-[#bdbdbd] uppercase">
         Block Builder
       </span>
       {ListItems.map((item, index) => (
         <div
           key={index}
-          className={`flex items-center justify-between py-2 last:border-none cursor-pointer`}
+          className={`flex items-center justify-between py-2 last:border-none cursor-pointer text-sm md:text-base`}
           onClick={() => handleSelect(index)}
         >
           <div className="flex items-center">

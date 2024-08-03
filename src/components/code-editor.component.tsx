@@ -30,7 +30,7 @@ export const CodeEditor: React.FC = () => {
     <div className="flex flex-col p-4 rounded-xl bg-[#2c2c2c]/90 md:mx-4 w-full h-full">
       <ToastContainer />
       <div className="flex items-center justify-between mb-4">
-        <label className="text-lg font-semibold text-[#bdbdbd] uppercase">
+        <label className="text-sm md:text-lg font-semibold text-[#bdbdbd] uppercase">
           Code Editor
         </label>
         <button
@@ -38,7 +38,7 @@ export const CodeEditor: React.FC = () => {
           onClick={handleCopy}
         >
           <FiCopy className="mr-2" />
-          <span>Copy</span>
+          <span className="text-sm md:text-base">Copy</span>
         </button>
       </div>
       <div className="rounded-md p-2 border ">

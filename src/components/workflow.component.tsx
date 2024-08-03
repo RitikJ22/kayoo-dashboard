@@ -17,12 +17,12 @@ export const Workflow = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
         <div className="flex flex-col">
           <div className="flex items-center justify-normal gap-2">
-            <h2 className="text-2xl font-bold">Project Name</h2>
-            <span className="text-md text-purple-500 bg-purple-500/20 rounded-md px-1">
+            <h2 className="text-lg md:text-2xl font-bold">Project Name</h2>
+            <span className="text-xs md:text-md text-purple-500 bg-purple-500/20 rounded-md px-1">
               Configure workflow
             </span>
           </div>
-          <p className="text-md font-light text-[#bcbcbc]">
+          <p className="text-xs md:text-md font-light text-[#bcbcbc]">
             Now you're using the beta version of Kayoo
           </p>
         </div>

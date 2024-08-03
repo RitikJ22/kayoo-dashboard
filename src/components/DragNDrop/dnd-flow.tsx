@@ -76,7 +76,7 @@ export const DnDFlow: React.FC = () => {
   };
 
   return (
-    <div className="dndflow flex gap-5 items-center justify-center min-h-[450px]">
+    <div className="dndflow flex gap-5 items-center justify-center md:min-h-[450px]">
       <ReactFlowProvider>
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
           <ReactFlow

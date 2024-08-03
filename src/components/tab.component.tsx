@@ -13,7 +13,7 @@ export const Tab = ({ tabs }: TabProps) => {
       : "text-[#dbdbdb]/50";
 
   return (
-    <div className="flex gap-10 py-2 bg-[#2c2c2c]/90 px-3 rounded-xl w-fit">
+    <div className="flex gap-5 md:gap-10 py-2 bg-[#2c2c2c]/90 px-3 rounded-xl w-fit">
       {tabs.map((tab) => (
         <div
           key={tab.type}
@@ -23,7 +23,9 @@ export const Tab = ({ tabs }: TabProps) => {
           onClick={() => setActiveTab(tab.type)}
         >
           {tab.icon}
-          {tab.text && <span className="text-white">{tab.text}</span>}
+          {tab.text && (
+            <span className="text-xs md:text-base text-white">{tab.text}</span>
+          )}
         </div>
       ))}
     </div>
