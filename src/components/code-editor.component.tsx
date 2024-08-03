@@ -27,7 +27,7 @@ export const CodeEditor: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col p-4 rounded-xl bg-[#2c2c2c]/90 mx-4 w-full h-full">
+    <div className="flex flex-col p-4 rounded-xl bg-[#2c2c2c]/90 md:mx-4 w-full h-full">
       <ToastContainer />
       <div className="flex items-center justify-between mb-4">
         <label className="text-lg font-semibold text-[#bdbdbd] uppercase">
