@@ -4,7 +4,7 @@ type TabProps = {
   tabs: { type: string; icon: React.ReactNode; text?: string }[];
 };
 
-export const Tab: React.FC<TabProps> = ({ tabs }) => {
+export const Tab = ({ tabs }: TabProps) => {
   const [activeTab, setActiveTab] = useState<string>(tabs[0]?.type);
 
   const tabClass = (tab: string) =>
@@ -13,7 +13,7 @@ export const Tab: React.FC<TabProps> = ({ tabs }) => {
       : "text-[#dbdbdb]/50";
 
   return (
-    <div className="flex gap-10 py-2 bg-[#2c2c2c]/90 px-3 rounded-xl">
+    <div className="flex gap-10 py-2 bg-[#2c2c2c]/90 px-3 rounded-xl w-fit">
       {tabs.map((tab) => (
         <div
           key={tab.type}

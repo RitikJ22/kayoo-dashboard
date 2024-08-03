@@ -14,7 +14,7 @@ export const Workflow = () => {
   ];
   return (
     <div className="px-4 w-full flex-grow">
-      <div className="flex justify-between mb-6">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
         <div className="flex flex-col">
           <div className="flex items-center justify-normal gap-2">
             <h2 className="text-2xl font-bold">Project Name</h2>

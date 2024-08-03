@@ -43,7 +43,7 @@ export const DnDFlow: React.FC = () => {
     [setEdges]
   );
 
-  const onNodeDoubleClick = (event: React.MouseEvent, node: Node) => {
+  const onNodeDoubleClick = (_event: React.MouseEvent, node: Node) => {
     const newLabel = prompt("Enter new label:", node.data.label);
     if (newLabel) {
       setNodes((nds) =>
@@ -54,7 +54,7 @@ export const DnDFlow: React.FC = () => {
     }
   };
 
-  const handleAddNode = (type: string, label: string) => {
+  const handleAddNode = (_type: string, label: string) => {
     if (!reactFlowWrapper.current || !reactFlowInstance) return;
 
     const reactFlowBounds = reactFlowWrapper.current.getBoundingClientRect();
